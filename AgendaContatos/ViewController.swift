@@ -48,7 +48,7 @@ class ViewController: UIViewController {
                             if let _phoneContacts = contact.phoneNumbers.first?.value {
                                 let currentContact: Contact = Contact(contact.givenName, contact.familyName, _phoneContacts.stringValue)
                                 self.contacts.append(currentContact)
-                                print("\(contact.givenName) - \(_phoneContacts.stringValue) - \(contact.familyName)")
+                                print("\(contact.givenName) \(contact.familyName) - \(_phoneContacts.stringValue)")
                             }
                             
                            
